@@ -2,6 +2,10 @@
 
 In this project, I created a Bastion Host within a custom VPC, allowing me to securely connect to a private Linux EC2 instance that is not accessible from the internet. The Bastion Host is a Windows server in the public subnet, and I use it to RDP in and then SSH into the Linus server. I also built the entire network using Terraform, including the VPC, subnets, Internet Gateway, NAT Gateway, route tables, and security groups.
 
+<img width="3669" height="1160" alt="Blank diagram (2)" src="https://github.com/user-attachments/assets/edd6eea4-2740-46c9-a285-e06b7183d1c0" />
+
+
+
 ## What I Built
 
 1. Custom VPC - I created a custom VPC using a CIDR range that I chose. Inside this, I made:
@@ -64,6 +68,7 @@ In this project, I created a Bastion Host within a custom VPC, allowing me to se
 1. Limit SSH so that only the Bastion Host can reach the Linux server
 2. Add MFA to the Bastion Host
 3. Turn on logging for better auditing
+
 
 
 
